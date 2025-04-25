@@ -1,4 +1,8 @@
 # 🌈 Pretty Admin – Tailwind-powered Django Admin Skin
+[![PyPI version](https://badge.fury.io/py/pretty-admin.svg)](https://badge.fury.io/py/pretty-admin)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 
 **Pretty Admin** is a beautiful, customizable Django admin interface built with Tailwind CSS. It enhances the default Django admin with modern UI and responsive design.
 
@@ -20,7 +24,7 @@
 You can install Pretty Admin directly from PyPI:
 
 ```bash
-pip install pretty_admin
+pip install pretty-admin
 ```
 
 ## ⚙️ Setup Instructions
