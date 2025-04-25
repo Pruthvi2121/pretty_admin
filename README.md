@@ -39,7 +39,7 @@ Make sure it's placed **before** `django.contrib.admin`:
 # settings.py
 
 INSTALLED_APPS = [
-    'pretty_admin',              # 👈 Add this at the top before `django.contrib.admin`
+    'pretty_admin',               # 👈 Add this at the top before django.contrib.admin
     'django.contrib.admin',
     'django.contrib.auth',
     ...
