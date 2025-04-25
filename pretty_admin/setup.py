@@ -3,13 +3,8 @@ import os
 
 # Get absolute path of this file
 this_directory = os.path.abspath(os.path.dirname(__file__))
-
-# Path to README.md relative to setup.py
-readme_path = os.path.join(this_directory, '..', 'README.md')
-
-# Read README content
-with open(readme_path, "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+with open(os.path.join(this_directory, '../README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='pretty_admin',
@@ -18,9 +13,19 @@ setup(
     include_package_data=True,
     description='A Tailwind-based Django admin UI skin',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Pruthviraj Chokake',
     author_email='chokake.pruthvi@gmail.com',
     license='MIT',
+    url='https://github.com/Pruthvi2121/pretty_admin',  
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Operating System :: OS Independent',
+    ],
     install_requires=[
         'Django>=3.2',
         'setuptools'
