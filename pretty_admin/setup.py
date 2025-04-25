@@ -1,9 +1,15 @@
 from setuptools import setup, find_packages
 import os
-# Read the README file
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
 
+# Get absolute path of this file
+this_directory = os.path.abspath(os.path.dirname(__file__))
+
+# Path to README.md relative to setup.py
+readme_path = os.path.join(this_directory, '..', 'README.md')
+
+# Read README content
+with open(readme_path, "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
 setup(
     name='pretty_admin',
