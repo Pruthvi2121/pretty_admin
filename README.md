@@ -35,7 +35,7 @@ Follow these steps to integrate `pretty_admin` into your Django project:
 
 Make sure it's placed **before** `django.contrib.admin`:
 
-```python
+```
 # settings.py
 
 INSTALLED_APPS = [
